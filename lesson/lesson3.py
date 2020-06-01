@@ -60,3 +60,9 @@ print(s.capitalize()) # My name is mike. hi mike.
 print(s.title()) # My Name Is Mike. Hi Mike.
 # 指定した文字列を変換する
 print(s.replace('Mike', 'Nancy')) # My name is Nancy. Hi Nancy.
+
+s = 'aaa' + \
+    'bbb'
+
+s = ('aaa' +
+    'bbb' )
