@@ -1,0 +1,21 @@
+# デコレーターafter
+def print_info(func):
+    def wrapper(*args, **kwargs):
+        print('start')
+        result = func(*args, **kwargs)
+        print('end')
+        return result
+    return wrapper
+
+@print_info
+def add_num(a, b):
+    return a + b
+
+@print_info
+def sub_num(a, b):
+    return a - b
+
+a = add_num(10, 20)
+s = sub_num(10, 20)
+print(a)
+print(s)
